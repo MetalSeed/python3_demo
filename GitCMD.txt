@@ -1,7 +1,15 @@
-#repo init
+# repo init
 git init
 
-#repo commit
+# repo commit
 git add .
 git commit -m "str"
 
+# commit status
+git status
+
+# code version
+git log
+
+# code redo
+git reset --hard HEAD^
