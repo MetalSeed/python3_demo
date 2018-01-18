@@ -1,0 +1,7 @@
+#repo init
+git init
+
+#repo commit
+git add .
+git commit -m "str"
+
