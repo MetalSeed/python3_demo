@@ -31,9 +31,34 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 # add remote repository
 git remote add origin git@github.com:MetalSeed/xxxxx.git
 
+# git clone a repository form remote
+git clone git@github.com:MetalSeed/xxxxx.git
+git clone git@github.com:MetalSeed/xxxxx.git myrepo
+
 # push to remote
 git push -u origin master
 git push origin master
+git push # push the remote-tarcking branch
 
-# git clone a repository form remote
-git clone git@github.com:MetalSeed/xxxxx.git
+# fetch from remote
+git fetch origin #fetch all branch
+git fetch origin master #fetch the branch
+
+# list branch
+git branch -r #remote
+git branch -a #all branch
+
+# merge origin/master & master
+git merge origin/master
+
+# pull from remote = fetch & merge
+git pull # pull the remote-tracking branch
+git pull origin master:master #git pull <remoterepo> <branch>:<localrepo>
+git pull origin master #= git fetch origin  git merge origin/master
+git pull origin
+
+
+# other
+git remote -v
+git remote rm git@github.com:MetalSeed/xxxxx.git
+
