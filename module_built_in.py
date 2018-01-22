@@ -100,11 +100,35 @@ b3 = (n & 0xff00) >> 8
 b4 = n & 0xff
 bs = bytes([b1, b2, b3, b4])
 bs
-print(bs)
+# print(bs)
 
 import struct
 s = struct.pack('>I', 10240099)
-print(s)
+# print(s)
 s = struct.unpack('>IH', b'\xf0\xf0\xf0\xf0\x80\x80')
+#----------------------------------------------------------------------#
+
+############################### hashlib ###############################
+import hashlib
+
+#md5
+md5 = hashlib.md5()
+md5.update('how to use md5 in '.encode('utf-8'))
+md5.update('python hashlib?'.encode('utf-8'))
+# print(md5.hexdigest())
+#sha1
+sha1 = hashlib.sha1()
+sha1.update('how to use sha1 in '.encode('utf-8'))
+sha1.update('python hashlib?'.encode('utf-8'))
+# print(sha1.hexdigest())
+#----------------------------------------------------------------------#
+
+############################### hmac ###############################
+import hmac
+
+message = b'this x'
+key = b'secret'
+h = hmac.new(key, message, digestmod='MD5')
+# print(h.hexdigest())
 #----------------------------------------------------------------------#
 
