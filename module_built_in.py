@@ -132,3 +132,49 @@ h = hmac.new(key, message, digestmod='MD5')
 # print(h.hexdigest())
 #----------------------------------------------------------------------#
 
+############################### itertools ###############################
+import itertools
+#just caculate next object when been called
+cs = itertools.cycle('abc')
+# for c in cs:
+# 	print(c)
+
+ns = itertools.repeat('abc', 3)
+# for n in ns:
+# 	print(n)
+
+natuals = itertools.count(1)
+ns = itertools.takewhile(lambda x: x <= 10, natuals)
+# print(list(ns))
+
+# chain groupby
+
+# for c in itertools.chain('abc', '123'):
+# 	print(c)
+
+# for key, group in itertools.groupby('AAABBBBCCCDD'):
+# 	print(key, list(group))
+
+# for key, group in itertools.groupby('AaabBbcCaa', lambda c: c.upper()):
+# 	print(key, list(group))
+#----------------------------------------------------------------------#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
