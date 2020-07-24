@@ -28,15 +28,16 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。
 //
 
-# add remote repository
+# add remote repository, remove a remote repo
 git remote add origin git@github.com:MetalSeed/xxxxx.git
+git remote rm origin
 
-# git clone a repository form remote
+# git clone a repository from remote
 git clone git@github.com:MetalSeed/xxxxx.git
 git clone git@github.com:MetalSeed/xxxxx.git myrepo
 
 # push to remote
-git push -u origin master
+git push -u origin master # set the default path to push 
 git push origin master
 git push # push the remote-tarcking branch
 

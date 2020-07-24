@@ -70,7 +70,7 @@ from collections import Counter
 c = Counter()
 for x in 'this is a short string':
 	c[x] = c[x] + 1
-# print(c)
+print(c)
 
 #----------------------------------------------------------------------#
 
