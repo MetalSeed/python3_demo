@@ -36,7 +36,7 @@ git remote rm origin
 git clone git@github.com:MetalSeed/xxxxx.git
 git clone git@github.com:MetalSeed/xxxxx.git myrepo
 
-# push to remote
+# push to remote （add, commit, then push）
 git push -u origin master # set the default path to push 
 git push origin master
 git push # push the remote-tarcking branch
